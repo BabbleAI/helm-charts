@@ -10,7 +10,7 @@ dependencies:
       - bitnami-common
     version: 2.x.x
 description: An introduction to backend development
-home: https://github.com/IByteAI/helm-charts/tree/main/charts/zero2prod
+home: https://github.com/BabbleAI/helm-charts/tree/main/charts/zero2prod
 keywords:
   - zero2prod
   - rust
@@ -20,5 +20,5 @@ maintainers:
     email: 418121364@qq.com
 name: zero2prod
 sources:
-  - https://github.com/bitnami/containers/tree/main/bitnami/kafka
+  - https://github.com/BabbleAI/helm-charts/tree/main/charts/zero2prod
 version: 0.1.0
