@@ -108,3 +108,10 @@ Return the postgresql Secret Name
     {{- include "zero2prod.postgresql.fullname" . -}}
 {{- end -}}
 {{- end -}}
+
+{{/*
+Expand the name of the chart.
+*/}}
+{{- define "zero2prod.otlpEndpoint" -}}
+{{- default "" .Values.telemetry.endpoint }}
+{{- end }}
