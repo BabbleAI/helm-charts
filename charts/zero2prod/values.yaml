@@ -95,4 +95,4 @@ postgresql:
     password: ""
 
 telemetry:
-  endpoint: signoz-k8s-infra-otel-agent.platform.svc.cluster.local
+  endpoint: http://signoz-k8s-infra-otel-agent.platform.svc.cluster.local:4317
