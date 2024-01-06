@@ -1,0 +1,32 @@
+apiVersion: v1
+entries:
+  zero2prod:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-01-06T12:35:35.042171265Z"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: An introduction to backend development
+    digest: e41b4b4ead1537d2f7b3d32d1814d5020419879f85b795f5f77011965865bd80
+    home: https://github.com/BabbleAI/helm-charts/tree/main/charts/zero2prod
+    keywords:
+    - zero2prod
+    - rust
+    - backend development
+    maintainers:
+    - email: 418121364@qq.com
+      name: npuichigo
+    name: zero2prod
+    sources:
+    - https://github.com/BabbleAI/helm-charts/tree/main/charts/zero2prod
+    urls:
+    - https://github.com/BabbleAI/helm-charts/releases/download/zero2prod-0.1.1/zero2prod-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-01-06T12:35:35.042179391Z"
