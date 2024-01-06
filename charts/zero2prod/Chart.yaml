@@ -21,4 +21,4 @@ maintainers:
 name: zero2prod
 sources:
   - https://github.com/BabbleAI/helm-charts/tree/main/charts/zero2prod
-version: 0.1.0
+version: 0.1.1
