@@ -34,19 +34,21 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            - name: ZERO2PROD_DATABASE_HOST
+            - name: APP_DATABASE__HOST
               value: {{ include "zero2prod.databaseHost" . | quote }}
-            - name: ZERO2PROD_DATABASE_PORT
+            - name: APP_DATABASE__PORT
               value: {{ include "zero2prod.databasePort" . | quote }}
-            - name: ZERO2PROD_DATABASE_DATABASE_NAME
+            - name: APP_DATABASE__DATABASE_NAME
               value: {{ include "zero2prod.databaseName" . | quote }}
-            - name: ZERO2PROD_DATABASE_USERNAME
+            - name: APP_DATABASE__USERNAME
               value: {{ include "zero2prod.databaseUser" . | quote }}
-            - name: ZERO2PROD_DATABASE_PASSWORD
+            - name: APP_DATABASE__PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ include "zero2prod.databaseSecretName" . }}
                   key: password
+            - name: APP_APPLICATION__OTLP_ENDPOINT
+              value: {{ include "zero2prod.otlpEndpoint" . | quote }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
