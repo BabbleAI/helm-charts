@@ -93,3 +93,6 @@ postgresql:
     username: npuichigo
     database: newsletter
     password: ""
+
+telemetry:
+  endpoint: signoz-k8s-infra-otel-agent.platform.svc.cluster.local
